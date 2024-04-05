@@ -1,0 +1,65 @@
+/* Estilo de la tarjeta flotante */
+.card-floating {
+    position: absolute;
+    top: 50%;
+    left: 5%; 
+    transform: translateY(-50%);
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+    max-width: 1300px; 
+    height: 1100px;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 1px 14px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cards-container {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+/*Estilos del texto*/
+h2 {
+    color: black;
+    font-family: monospace;
+    font-size: 40px;
+    margin-left: 20px; 
+    margin-top: 20px; 
+}
+
+/* Estilo del campo de texto */
+.custom-input {
+    width: 1300px; /* Ancho del campo de texto */
+    padding: 10px;
+    border-radius: 15px; 
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    position: absolute; 
+    top: 50%; 
+    right: 170px; 
+    transform: translateY(-50%); 
+    box-shadow: 1px 14px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del botón */
+.custom-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 17px;
+    font-size: 27px;
+    position: absolute;
+    top: calc(50% + 80px); 
+    right: 170px; 
+    transform: translateY(-50%);
+}
+
+.custom-button:hover {
+    background-color: #0056b3;
+}
+
+.texto1 {
+    display: block; /* Hace que el label ocupe todo el ancho disponible */
+    margin-bottom: 5px; /* Espacio entre el label y el input */
+}

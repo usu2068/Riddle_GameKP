@@ -1,0 +1,63 @@
+.fondo {
+    background: linear-gradient(to right, #032d40, #260243); /* Cambia 'to right' por 'to bottom' para hacerlo vertical */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+  }
+
+/* Estilo de la tarjeta flotante */
+.card-floating {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    /* Ajusta la opacidad según tu preferencia */
+    width: 1300px;
+    /* Ajusta el ancho de la tarjeta */
+    height: 700px;
+    /* Ajusta la altura de la tarjeta */
+    padding: 20px;
+    /* Ajusta el relleno interno según sea necesario */
+    border-radius: 25px;
+    box-shadow: 1px 14px 8px 0px rgba(0, 0, 0, 0.1);
+    /* Añade sombra para profundidad */
+}
+
+.cards-container {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.blue-card {
+    background-color: rgb(174, 217, 235); 
+    width: 570px;
+    margin-left: 450px;
+    flex-grow: 0;
+    border-radius: 30px;
+  }
+
+  /*Estilos de la imagen*/
+  .overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    width: 160%; 
+    height: 95%; 
+    transform: translate(-50%, -50%);
+  }
+
+  /*Estilos del texto*/
+  h2 {
+    color: black;
+    position: center;
+    font-family: monospace;
+    font-size: 40px;
+    margin-left: 60px;
+    margin-top: 70px;
+  }
