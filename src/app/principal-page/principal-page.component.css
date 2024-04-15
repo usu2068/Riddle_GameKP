@@ -7,7 +7,7 @@
     background-color: rgb(255, 255, 255);
     width: 800px;
     max-width: 1300px; 
-    height: 1100px;
+    height: 800px;
     padding: 20px;
     border-radius: 25px;
     box-shadow: 1px 14px 8px 0px rgba(0, 0, 0, 0.1);
@@ -29,7 +29,7 @@ h2 {
 
 /* Estilo del campo de texto */
 .custom-input {
-    width: 1300px; /* Ancho del campo de texto */
+    width: 700px; /* Ancho del campo de texto */
     padding: 10px;
     border-radius: 15px; 
     background-color: rgb(255, 255, 255);
@@ -51,7 +51,7 @@ h2 {
     font-size: 27px;
     position: absolute;
     top: calc(50% + 80px); 
-    right: 170px; 
+    right: 100px; 
     transform: translateY(-50%);
 }
 

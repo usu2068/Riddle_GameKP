@@ -1,18 +1,10 @@
-<div class="fondo">
-    <div class="login-wrapper height-custom">
-        <div class="cards-container">
-            <div class="card-floating">
-                <h2>Iniciar Sesión</h2>
-                <form>
-                    <label>Usuario</label>
-                    <input type="text" id="usuario" required>
 
-                </form>
-            </div>
-            <div class="card-floating blue-card">
-                <!-- Contenido de la tarjeta azul -->
-                <img src="../../assets/imagenes/persona.png" class="overlay-image">
-            </div>
-        </div>
-    </div>
+<div class="login">
+    <form class="custom-form" [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+        <h1>INICIAR SESIÓN</h1>
+        <input type="text" name="usuario" required="required" placeholder="USUARIO" formControlName="user"/>
+        <button type="submit" [disabled]="submitted" >Ingresar</button>
+        <br>
+        <button (click)="openRegister()">¡Registrarse!</button>
+    </form>
 </div>

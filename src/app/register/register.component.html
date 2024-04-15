@@ -1,1 +1,9 @@
-<p>register works!</p>
+
+<div class="register">
+    <form class="custom-form" [formGroup]="formRegister" (ngSubmit)="register()">
+        <h1> Registrarse</h1>
+        <input type="text" name="usuario" required="required" placeholder="USUARIO" formControlName="user"/>
+        <input type="email" name="email" required="required" placeholder="EMAIL"  formControlName="email"/>
+        <button [disabled]="submitted" type="submit">Registrarse</button>
+    </form>
+</div>
