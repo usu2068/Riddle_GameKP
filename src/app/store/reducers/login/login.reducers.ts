@@ -18,7 +18,7 @@ export const initialStateLogin: LoginState = {
     loaded: false,
     loading: false,
     error: null,
-    usuario: '',
+    usuario: '', //SPANGLISH
 };
 
 const _reducerLogin = createReducer(
@@ -28,29 +28,29 @@ const _reducerLogin = createReducer(
         loading: true,
         loaded: false,
         error: null,
-        usuario: null,
+        usuario: null //SPANGLISH
     })),
     on(loadLoginsSuccess, (state, { usuario }) => ({
         ...state,
         loading: false,
         loaded: true,
         error: null,
-        usuario: usuario,
+        usuario: usuario, //SPANGLISH
     })),
     on(loadLoginFailure, (state, { error }) => ({
         ...state,
         loading: false,
         loaded: false,
         error: error,
-        usuario: '',
+        usuario: '',    //SPANGLISH
     })),
     on(clearLogin, (state) => ({
         ...state,
         loaded: false,
         loading: false,
         error: null,
-        usuario: '',
-    }))
+        usuario: '',    //SPANGLISH
+    })) 
 );
 
 export function reducerLogin(state: any, action: Action) {

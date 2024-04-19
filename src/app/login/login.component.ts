@@ -46,7 +46,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnDestroy(): void {
-    if (this.login$) this.login$.unsubscribe();
+    // if (this.login$) this.login$.unsubscribe();
   }
 
   openRegister(): void {
@@ -98,4 +98,11 @@ export class LoginComponent implements OnInit {
     }
   }
 
+
+  //VALIDACION DEL CAMPO USUARIO, NO DEBE ADMITIR PUNTOS
+  //NI NUMEROS
+  //NO DEBE ADMITIR CARACTERES ESPECIALES
+  //VALIDAR EL TIPO DE ACCESO AL JUEGO
+  //QUITAR EL CORREO - DA A ENTENDER QUE SE ESTA GUARDANDO ALGUN DATO IMPORTANTE
+  //QUE NO HAYAN 2 NOMBRE DE USUARIO IGUALES
 }

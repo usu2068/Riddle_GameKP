@@ -24,7 +24,7 @@ export class UserService {
     }
 
     public getUser(): Observable<any>{
-        return this.http.get(`${environment.urlUsers}/Api/Usuarios`, this.httpOptions)
+        return this.http.get(`${environment.urlUsers}/Api/Usuarios`, this.httpOptions) //SPANGLISH
             .pipe(
                 pluck('body'),
                 map((data: any) => {
@@ -35,6 +35,7 @@ export class UserService {
             );
     }
 
+    //DEBO SEPARAR EL ARCHIVO?
     public createUser(user: CreateUser): Observable<any> {
         console.log(user);
         return this.http.post<any>(`${environment.urlUsers}/Api/Usuarios`, user, this.httpOptions)

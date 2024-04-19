@@ -14,12 +14,13 @@ export class LoginEffects {
         private login: UserService  
     ) { }
 
-    validateLogin$: Observable<Action> = createEffect(() =>
+    //NOMBRE DE LAS VARIABLES, TIENEN QUE SER ENTENDIBLES PARA CUALQUIER PERSONA QUE LEA EL CODIGO 
+    validateLogin$: Observable<Action> = createEffect(() => 
         this.actions$.pipe(
             ofType(loginActions.loadLogins),
             mergeMap(({}) =>
                 this.login.getUser().pipe(
-                    map((usuario: any) => loginActions.loadLoginsSuccess({ usuario })),
+                    map((usuario: any) => loginActions.loadLoginsSuccess({ usuario })), //SPANGLISH
                     catchError((error) =>
                         of(loginActions.loadLoginFailure({ error: error })))
                 )

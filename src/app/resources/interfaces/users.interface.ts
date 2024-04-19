@@ -4,6 +4,7 @@ export interface User {
     email: string
 }
 
+//DEBERIA SOLO USAR UNO SOLO?
 export interface CreateUser {
     id: number,
     user: string,

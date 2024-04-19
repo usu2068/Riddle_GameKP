@@ -11,7 +11,7 @@
   h1 {
     margin: 0;
     padding: 0;
-    color: black;
+    color: rgba(102, 102, 102);
     font-family: monospace;
     font-size: 40px;
     letter-spacing: 0.15em;

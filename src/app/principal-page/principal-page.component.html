@@ -1,14 +1,21 @@
-<div class="login-wrapper height-custom ">
-    <div class="cards-container">
-        <div class="card-floating">
-            <h2>Instrucciones</h2>
-            <p style="color: black;">Aqui van las instrucciones</p>
-        </div>
+<div class="sidenav">
+    <div class="user-avatar">
+        <img src="https://picsum.photos/50" alt="Avatar">
+    </div>
+    <div class="logout-btn" (click)="logout()">
+        <i class="fas fa-sign-out-alt"></i>
     </div>
 </div>
 
-<div>
-    <input type="number" id="number" class="custom-input"><br>
-    <button class="custom-button" disabled>Enviar</button>
 
+<div class="principal-page">
+    <div class="custom-instructions">
+        <h1>INSTRUCCIONES</h1>
+        <textarea type="text" readonly disabled> </textarea>
+    </div>
+    <div class="custom-input">
+        <input type="number" id="userNumber" (keypress)="validateInput($event)" [(ngModel)]="userNumber"/>
+        <br>
+        <button (click)="play()">Enviar</button>
+    </div>
 </div>
